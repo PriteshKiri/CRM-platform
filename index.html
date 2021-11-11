@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> -->
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Table</title>
+  </head>
+  <body>
+    <div class="top">
+      <div class="search">
+        <i class="fa fa-search" aria-hidden="true"></i
+        ><span>1 of 276 contacts</span>
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <div class="buttons">
+        <button>View</button>
+        <button>Edit</button>
+        <button>
+          Status <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </button>
+        <button>Send</button>
+        <button>...</button>
+        <span>|</span>
+        <button><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <button><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div class="tablealign">
+      <table>
+        <thead>
+          <tr>
+            <th class="col1name">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label for="name"> Name</label>
+            </th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Status</th>
+            <th>Source</th>
+            <th>
+              Date added <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </th>
+            <th>Company</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr onmouseover="view1(this)" onmouseout="remove1(this)">
+            <td class="tbodyclass" style="">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label style="" for="name"> Jane copper</label>
+
+              <button onclick="myFunction()" class="dropbtn dropdown">
+                ...
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Update status</a>
+                <a href="#">Send a message</a>
+                <a href="#">View Details</a>
+                <a href="#">Edit</a>
+                <a href="#">Copy</a>
+                <a href="#">Move</a>
+                <a href="#">Export</a>
+                <a href="#"><span>Delete</span> </a>
+              </div>
+            </td>
+            <td>xyz@example.com</td>
+            <td>123456789</td>
+            <td class="boldfont">Open</td>
+            <td id="pushopt1" class="sourcewidth hideoption">
+              <span>Manually added</span>
+              <i class="fa fa-share opthover" aria-hidden="true"></i>
+              <i class="fa fa-download opthover" aria-hidden="true"></i>
+              <i class="fa fa-trash opthover" aria-hidden="true"></i>
+            </td>
+            <td>11/7/16</td>
+            <td>xyz</td>
+          </tr>
+          <tr
+            onmouseover="view2(this)"
+            onmouseout="remove2(this)"
+            class="color"
+          >
+            <td class="tbodyclass">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label for="name"> Jane copper</label>
+              <button onclick="myFunction()" class="dropbtn">...</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Update status</a>
+                <a href="#">Send a message</a>
+                <a href="#">View Details</a>
+                <a href="#">Edit</a>
+                <a href="#">Copy</a>
+                <a href="#">Move</a>
+                <a href="#">Export</a>
+                <a href="#"><span style="color: red">Delete</span> </a>
+              </div>
+            </td>
+            <td>xyz@example.com</td>
+            <td>123456789</td>
+            <td class="boldfont">Open</td>
+            <td id="pushopt2" class="hideoption">
+              Manually added
+              <i class="fa fa-share opthover" aria-hidden="true" style=""></i>
+              <i class="fa fa-download opthover" aria-hidden="true"></i>
+              <i class="fa fa-trash opthover" aria-hidden="true"></i>
+            </td>
+            <td>11/7/16</td>
+            <td>xyz</td>
+          </tr>
+          <tr onmouseover="view3(this)" onmouseout="remove3(this)">
+            <td class="tbodyclass">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label for="name"> Jane copper</label>
+              <button onclick="myFunction()" class="dropbtn">...</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Update status</a>
+                <a href="#">Send a message</a>
+                <a href="#">View Details</a>
+                <a href="#">Edit</a>
+                <a href="#">Copy</a>
+                <a href="#">Move</a>
+                <a href="#">Export</a>
+                <a href="#"><span>Delete</span> </a>
+              </div>
+            </td>
+            <td>xyz@example.com</td>
+            <td>123456789</td>
+            <td class="boldfont">Open</td>
+            <td id="pushopt3" class="hideoption">
+              Manually added
+              <i class="fa fa-share opthover" aria-hidden="true"></i>
+              <i class="fa fa-download opthover" aria-hidden="true"></i>
+              <i class="fa fa-trash opthover" aria-hidden="true"></i>
+            </td>
+            <td>11/7/16</td>
+            <td>xyz</td>
+          </tr>
+          <tr onmouseover="view4(this)" onmouseout="remove4(this)">
+            <td class="tbodyclass">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label for="name"> Jane copper</label>
+              <button onclick="myFunction()" class="dropbtn">...</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Update status</a>
+                <a href="#">Send a message</a>
+                <a href="#">View Details</a>
+                <a href="#">Edit</a>
+                <a href="#">Copy</a>
+                <a href="#">Move</a>
+                <a href="#">Export</a>
+                <a href="#"><span>Delete</span> </a>
+              </div>
+            </td>
+            <td>xyz@example.com</td>
+            <td>123456789</td>
+            <td class="boldfont">Open</td>
+            <td id="pushopt4" class="hideoption">
+              Manually added
+              <i class="fa fa-share opthover" aria-hidden="true"></i>
+              <i class="fa fa-download opthover" aria-hidden="true"></i>
+              <i class="fa fa-trash opthover" aria-hidden="true"></i>
+            </td>
+            <td>11/7/16</td>
+            <td>xyz</td>
+          </tr>
+          <tr onmouseover="view5(this)" onmouseout="remove5(this)">
+            <td class="tbodyclass">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label for="name"> Jane copper</label>
+              <button onclick="myFunction()" class="dropbtn">...</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Update status</a>
+                <a href="#">Send a message</a>
+                <a href="#">View Details</a>
+                <a href="#">Edit</a>
+                <a href="#">Copy</a>
+                <a href="#">Move</a>
+                <a href="#">Export</a>
+                <a href="#"><span>Delete</span> </a>
+              </div>
+            </td>
+            <td>xyz@example.com</td>
+            <td>123456789</td>
+            <td class="boldfont">In Progress</td>
+            <td id="pushopt5" class="hideoption">
+              Manually added
+              <i class="fa fa-share opthover" aria-hidden="true"></i>
+              <i class="fa fa-download opthover" aria-hidden="true"></i>
+              <i class="fa fa-trash opthover" aria-hidden="true"></i>
+            </td>
+            <td>11/7/16</td>
+            <td>xyz</td>
+          </tr>
+          <tr onmouseover="view6(this)" onmouseout="remove6(this)">
+            <td class="tbodyclass">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label for="name"> Jane copper</label>
+              <button onclick="myFunction()" class="dropbtn">...</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Update status</a>
+                <a href="#">Send a message</a>
+                <a href="#">View Details</a>
+                <a href="#">Edit</a>
+                <a href="#">Copy</a>
+                <a href="#">Move</a>
+                <a href="#">Export</a>
+                <a href="#"><span>Delete</span> </a>
+              </div>
+            </td>
+            <td>xyz@example.com</td>
+            <td>123456789</td>
+            <td class="boldfont">On Hold</td>
+            <td id="pushopt6" class="hideoption">
+              Manually added
+              <i class="fa fa-share opthover" aria-hidden="true"></i>
+              <i class="fa fa-download opthover" aria-hidden="true"></i>
+              <i class="fa fa-trash opthover" aria-hidden="true"></i>
+            </td>
+            <td>11/7/16</td>
+            <td>xyz</td>
+          </tr>
+          <tr onmouseover="view7(this)" onmouseout="remove7(this)">
+            <td class="tbodyclass">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label for="name"> Jane copper</label>
+              <button onclick="myFunction()" class="dropbtn">...</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Update status</a>
+                <a href="#">Send a message</a>
+                <a href="#">View Details</a>
+                <a href="#">Edit</a>
+                <a href="#">Copy</a>
+                <a href="#">Move</a>
+                <a href="#">Export</a>
+                <a href="#"><span>Delete</span> </a>
+              </div>
+            </td>
+            <td>xyz@example.com</td>
+            <td>123456789</td>
+            <td class="boldfont">Open</td>
+            <td id="pushopt7" class="hideoption">
+              Manually added
+              <i class="fa fa-share opthover" aria-hidden="true"></i>
+              <i class="fa fa-download opthover" aria-hidden="true"></i>
+              <i class="fa fa-trash opthover" aria-hidden="true"></i>
+            </td>
+            <td>11/7/16</td>
+            <td>xyz</td>
+          </tr>
+          <tr onmouseover="view8(this)" onmouseout="remove8(this)">
+            <td class="tbodyclass">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label for="name"> Jane copper</label>
+              <button onclick="myFunction()" class="dropbtn">...</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Update status</a>
+                <a href="#">Send a message</a>
+                <a href="#">View Details</a>
+                <a href="#">Edit</a>
+                <a href="#">Copy</a>
+                <a href="#">Move</a>
+                <a href="#">Export</a>
+                <a href="#"><span>Delete</span> </a>
+              </div>
+            </td>
+            <td>xyz@example.com</td>
+            <td>123456789</td>
+            <td class="boldfont">Closed</td>
+            <td id="pushopt8" class="hideoption">
+              Manually added
+              <i class="fa fa-share opthover" aria-hidden="true"></i>
+              <i class="fa fa-download opthover" aria-hidden="true"></i>
+              <i class="fa fa-trash opthover" aria-hidden="true"></i>
+            </td>
+            <td>11/7/16</td>
+            <td>xyz</td>
+          </tr>
+          <tr onmouseover="view9(this)" onmouseout="remove9(this)">
+            <td class="tbodyclass">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label for="name"> Jane copper</label>
+              <button onclick="myFunction()" class="dropbtn">...</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Update status</a>
+                <a href="#">Send a message</a>
+                <a href="#">View Details</a>
+                <a href="#">Edit</a>
+                <a href="#">Copy</a>
+                <a href="#">Move</a>
+                <a href="#">Export</a>
+                <a href="#"><span>Delete</span> </a>
+              </div>
+            </td>
+            <td>xyz@example.com</td>
+            <td>123456789</td>
+            <td class="boldfont">Open</td>
+            <td id="pushopt9" class="hideoption">
+              Manually added
+              <i class="fa fa-share opthover" aria-hidden="true"></i>
+              <i class="fa fa-download opthover" aria-hidden="true"></i>
+              <i class="fa fa-trash opthover" aria-hidden="true"></i>
+            </td>
+            <td>11/7/16</td>
+            <td>xyz</td>
+          </tr>
+          <tr onmouseover="view10(this)" onmouseout="remove10(this)">
+            <td class="tbodyclass">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label for="name"> Jane copper</label>
+              <button onclick="myFunction()" class="dropbtn">...</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Update status</a>
+                <a href="#">Send a message</a>
+                <a href="#">View Details</a>
+                <a href="#">Edit</a>
+                <a href="#">Copy</a>
+                <a href="#">Move</a>
+                <a href="#">Export</a>
+                <a href="#"><span>Delete</span> </a>
+              </div>
+            </td>
+            <td>xyz@example.com</td>
+            <td>123456789</td>
+            <td class="boldfont">Open</td>
+            <td id="pushopt10" class="hideoption">
+              Manually added
+              <i class="fa fa-share opthover" aria-hidden="true"></i>
+              <i class="fa fa-download opthover" aria-hidden="true"></i>
+              <i class="fa fa-trash opthover" aria-hidden="true"></i>
+            </td>
+            <td>11/7/16</td>
+            <td>xyz</td>
+          </tr>
+          <tr onmouseover="view11(this)" onmouseout="remove11(this)">
+            <td class="tbodyclass">
+              <input type="checkbox" id="name" name="name" value="name" />
+              <label for="name"> Jane copper</label>
+              <button onclick="myFunction()" class="dropbtn">...</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Update status</a>
+                <a href="#">Send a message</a>
+                <a href="#">View Details</a>
+                <a href="#">Edit</a>
+                <a href="#">Copy</a>
+                <a href="#">Move</a>
+                <a href="#">Export</a>
+                <a href="#"><span>Delete</span> </a>
+              </div>
+            </td>
+            <td>xyz@example.com</td>
+            <td>123456789</td>
+            <td class="boldfont">Open</td>
+            <td id="pushopt11" class="hideoption">
+              Manually added
+              <i class="fa fa-share opthover" aria-hidden="true"></i>
+              <i class="fa fa-download opthover" aria-hidden="true"></i>
+              <i class="fa fa-trash opthover" aria-hidden="true"></i>
+            </td>
+            <td>11/7/16</td>
+            <td>xyz</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="bottom">
+      <div class="buttons" style="text-align: center">
+        <button><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <button>1</button>
+        <span class="boldfont"> of 28</span>
+        <button><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
